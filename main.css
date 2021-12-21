@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* viewport units: vh (viewport/page height), vw, vmin (smallest between vh & vw) */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  header {
+    font-size: 5vmin;
+    color: darkgrey;
+    letter-spacing: 1vmin;
+  }
+  h1 {
+    color:rgb(192, 43, 185);
+    font-size: 3vmin;
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(3,10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 1vmin;
+    margin-top: 3vmin;
+  }
+
+  #grid >div {
+    border-radius: 10%;
+    border: 0.1vmin solid grey;
+    text-align: center;
+    padding-top:30%;
+  }
+  
+
+  button {
+    margin-top: 4vmin;
+    padding: 2vmin;
+    font-size: 2vmin;
+    border-radius: 4vmin;
+    border: 0.1vmin solid grey;
+    color: grey;
+  }
+  
+  button:hover {
+    background-color: rgb(192, 43, 185);
+    color: white;
+    font-size: 3vmin;
+  }
